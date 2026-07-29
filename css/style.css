@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════
    MIDNIGHT GENESIS
-   Portfolio — Jawaria Asghar / Jaxoris
+   Portfolio — Jawaria Asghar / Jexoris
    ═══════════════════════════════════════════════════════════ */
 
 /* ───────── Tokens ───────── */
@@ -303,11 +303,21 @@ button{ font:inherit; color:inherit; background:none; border:0; }
 }
 
 .brand{ display:inline-flex; align-items:center; gap:11px; }
+/* The Jexoris star — keyed out of final-logo.jpg so the black becomes real
+   transparency and the glitter edge stays soft. Silver sits inside the palette,
+   so the glow around it is the same blue as everything else. */
 .brand__mark{
-  width:11px; height:11px; border-radius:50%;
-  background:var(--accent);
-  box-shadow:0 0 14px var(--glow), 0 0 34px rgba(101,184,255,.6);
+  width:26px; height:26px;
+  flex:0 0 auto;
+  object-fit:contain;
+  filter:drop-shadow(0 0 7px rgba(140,214,255,.5))
+         drop-shadow(0 0 20px rgba(35,120,255,.3));
+  transition:filter .4s var(--ease);
   animation:pulse 6s ease-in-out infinite;
+}
+.brand:hover .brand__mark{
+  filter:drop-shadow(0 0 11px rgba(140,214,255,.9))
+         drop-shadow(0 0 30px rgba(101,184,255,.55));
 }
 @keyframes pulse{
   0%,100%{ opacity:.75; transform:scale(.92); }
@@ -740,7 +750,7 @@ main{ position:relative; z-index:1; }
 }
 .project__visual{
   position:relative;
-  height:190px;
+  height:clamp(190px,19vw,225px);
   display:grid; place-items:center;
   border-bottom:1px solid var(--border-soft);
   overflow:hidden;
@@ -755,6 +765,20 @@ main{ position:relative; z-index:1; }
 .project__visual--c{ background:radial-gradient(90% 120% at 40% 75%, rgba(20,80,190,.42), rgba(5,8,14,.9)); }
 .project__visual--d{ background:radial-gradient(90% 120% at 60% 45%, rgba(140,214,255,.24), rgba(5,8,14,.92)); }
 .project__visual--e{ background:radial-gradient(90% 120% at 50% 30%, rgba(35,120,255,.26), rgba(5,8,14,.92)); }
+.project__visual--f{ background:radial-gradient(90% 120% at 25% 60%, rgba(101,184,255,.26), rgba(5,8,14,.92)); }
+
+/* Drop a screenshot in and it takes over the panel — see README.
+   The gradient stays underneath, so a slow-loading image never flashes white. */
+.project__visual img{
+  width:100%; height:100%;
+  object-fit:cover;
+  /* screenshots are wide, the panel is wider still — anchor to the top so the
+     header and headline survive the crop instead of the footer */
+  object-position:center top;
+  opacity:.88;
+  transition:opacity .6s var(--ease), transform .6s var(--ease);
+}
+.project:hover .project__visual img{ opacity:1; transform:scale(1.03); }
 
 .project__glyph{
   font-size:52px; line-height:1;

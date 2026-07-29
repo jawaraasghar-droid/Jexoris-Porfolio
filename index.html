@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Jawaria Asghar — Self-Taught Developer | Jaxoris</title>
+<title>Jawaria Asghar — Self-Taught Developer | Jexoris</title>
 <meta name="description" content="Some people write code. I build possibilities. Jawaria Asghar — self-taught developer working in Python, backend and web development, building toward AI deployment." />
 <meta name="author" content="Jawaria Asghar" />
 <meta name="theme-color" content="#050505" />
@@ -12,7 +12,7 @@
 <meta property="og:title" content="Jawaria Asghar — Self-Taught Developer" />
 <meta property="og:description" content="Some people write code. I build possibilities." />
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='%2365B8FF'/%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%238CD6FF' stroke-opacity='.4'/%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" href="assets/star-mark.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,8 +50,8 @@
 <header class="nav" id="nav">
   <div class="nav__inner">
     <a href="#home" class="brand" data-cursor="link">
-      <span class="brand__mark"></span>
-      <span class="brand__name">Jaxoris</span>
+      <img class="brand__mark" src="assets/star-mark.png" alt="" aria-hidden="true" />
+      <span class="brand__name">Jexoris</span>
     </a>
 
     <nav class="nav__links" id="navLinks" aria-label="Primary">
@@ -82,7 +82,7 @@
     <div class="glass hero__window reveal">
       <div class="hero__glare"></div>
 
-      <p class="hero__eyebrow"><span class="dot"></span>Jaxoris &mdash; building quietly, building well</p>
+      <p class="hero__eyebrow"><span class="dot"></span>Jexoris &mdash; building quietly, building well</p>
 
       <h1 class="hero__title">
         <span class="line">Some people write code.</span>
@@ -235,7 +235,7 @@
       <div class="projects">
 
         <article class="project glass reveal" data-cursor="card">
-          <div class="project__visual project__visual--a" aria-hidden="true"><span class="project__glyph">🏔️</span></div>
+          <div class="project__visual project__visual--a"><img src="assets/highland-routes.jpg" alt="The Highland Routes home page" loading="lazy" /></div>
           <div class="project__body">
             <h3 class="project__title">Highland Routes &mdash; Tour Site</h3>
             <p class="project__desc">A tour website for Skardu, Gilgit-Baltistan &mdash; planning practical trips to Deosai National Park and Upper Kachura Lake, with an attractions guide, photo gallery and a booking enquiry flow. Built multilingual from the start.</p>
@@ -243,23 +243,38 @@
               <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Multi-language</li>
             </ul>
             <div class="project__links">
-              <a href="#" class="link" data-cursor="link">Live Demo <span class="link__arrow">↗</span></a>
-              <a href="#" class="link" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
+              <a href="https://highlandroutes.com/" class="link" target="_blank" rel="noopener" data-cursor="link">Live Site <span class="link__arrow">↗</span></a>
+              <a href="https://github.com/jawaraasghar-droid/highland-tours" class="link" target="_blank" rel="noopener" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
             </div>
           </div>
         </article>
 
         <article class="project glass reveal" data-cursor="card">
-          <div class="project__visual project__visual--e" aria-hidden="true"><span class="project__glyph">🛎️</span></div>
+          <div class="project__visual project__visual--e"><img src="assets/saspolo-hotel.jpg" alt="The Saspolo Hotel home page" loading="lazy" /></div>
           <div class="project__body">
-            <h3 class="project__title">Hotel Website</h3>
-            <p class="project__desc">A complete multi-page site for a guesthouse: rooms, facilities, gallery and a working booking enquiry flow. Built to be edited by the owner directly &mdash; no framework, no admin panel to learn.</p>
+            <h3 class="project__title">Saspolo Hotel</h3>
+            <p class="project__desc">A complete multi-page site for a hotel: rooms, facilities, gallery and a working booking enquiry flow. Built to be edited by the owner directly &mdash; no framework, no admin panel to learn.</p>
             <ul class="stack">
               <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive</li>
             </ul>
             <div class="project__links">
-              <a href="#" class="link" data-cursor="link">Live Demo <span class="link__arrow">↗</span></a>
-              <a href="#" class="link" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
+              <a href="https://hotelsaspolo.com/" class="link" target="_blank" rel="noopener" data-cursor="link">Live Site <span class="link__arrow">↗</span></a>
+              <a href="https://github.com/jawaraasghar-droid/Sasplo-Hotel" class="link" target="_blank" rel="noopener" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project glass reveal" data-cursor="card">
+          <div class="project__visual project__visual--f"><img src="assets/schedule-maker.jpg" alt="The Schedule Maker app" loading="lazy" /></div>
+          <div class="project__body">
+            <h3 class="project__title">Schedule Maker</h3>
+            <p class="project__desc">A task and scheduling app, and my first Python project running live on the internet. Flask serves the pages, SQLite stores the tasks, and a separate notifications module handles the reminders. Deployed on PythonAnywhere.</p>
+            <ul class="stack">
+              <li>Python</li><li>Flask</li><li>SQLite</li><li>Deployment</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://codeempress.pythonanywhere.com/" class="link" target="_blank" rel="noopener" data-cursor="link">Live Site <span class="link__arrow">↗</span></a>
+              <a href="https://github.com/jawaraasghar-droid/schedule-maker" class="link" target="_blank" rel="noopener" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
             </div>
           </div>
         </article>
@@ -273,8 +288,7 @@
               <li>Python</li><li>Flask</li><li>SQLite</li><li>Pandas</li>
             </ul>
             <div class="project__links">
-              <a href="#" class="link" data-cursor="link">Live Demo <span class="link__arrow">↗</span></a>
-              <a href="#" class="link" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
+              <a href="https://github.com/jawaraasghar-droid/Expense-Tracker" class="link" target="_blank" rel="noopener" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
             </div>
           </div>
         </article>
@@ -288,8 +302,7 @@
               <li>Python</li><li>SQLite</li><li>CRUD</li><li>Data validation</li>
             </ul>
             <div class="project__links">
-              <a href="#" class="link" data-cursor="link">Live Demo <span class="link__arrow">↗</span></a>
-              <a href="#" class="link" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
+              <a href="https://github.com/jawaraasghar-droid/Student-Database-System" class="link" target="_blank" rel="noopener" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
             </div>
           </div>
         </article>
@@ -304,7 +317,7 @@
             </ul>
             <div class="project__links">
               <a href="#home" class="link" data-cursor="link">You&rsquo;re looking at it <span class="link__arrow">↗</span></a>
-              <a href="#" class="link" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
+              <a href="https://github.com/jawaraasghar-droid/Jaxoris-Porfolio" class="link" target="_blank" rel="noopener" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
             </div>
           </div>
         </article>
@@ -362,20 +375,15 @@
           <span class="contact__label">Email</span>
           <span class="contact__value">jawaraasghar@gmail.com</span>
         </a>
-        <a class="contact__card glass reveal" href="https://www.linkedin.com/" target="_blank" rel="noopener" data-cursor="card">
-          <span class="contact__glyph">in</span>
-          <span class="contact__label">LinkedIn</span>
-          <span class="contact__value">Let&rsquo;s connect</span>
-        </a>
-        <a class="contact__card glass reveal" href="https://github.com/" target="_blank" rel="noopener" data-cursor="card">
+        <a class="contact__card glass reveal" href="https://github.com/jawaraasghar-droid" target="_blank" rel="noopener" data-cursor="card">
           <span class="contact__glyph">⌘</span>
           <span class="contact__label">GitHub</span>
           <span class="contact__value">See the code</span>
         </a>
-        <a class="contact__card glass reveal" href="assets/resume.pdf" target="_blank" rel="noopener" data-cursor="card">
-          <span class="contact__glyph">↓</span>
-          <span class="contact__label">Resume</span>
-          <span class="contact__value">Download PDF</span>
+        <a class="contact__card glass reveal" href="assets/JEXORIS_.pdf" target="_blank" rel="noopener" data-cursor="card">
+          <span class="contact__glyph">◈</span>
+          <span class="contact__label">Work With Me</span>
+          <span class="contact__value">What I build, and how we&rsquo;d start</span>
         </a>
       </div>
     </div>
@@ -387,8 +395,8 @@
 <footer class="footer">
   <div class="wrap footer__inner">
     <a href="#home" class="brand brand--footer" data-cursor="link">
-      <span class="brand__mark"></span>
-      <span class="brand__name">Jaxoris</span>
+      <img class="brand__mark" src="assets/star-mark.png" alt="" aria-hidden="true" />
+      <span class="brand__name">Jexoris</span>
     </a>
     <p class="footer__line">
       Designed with curiosity.<br />
