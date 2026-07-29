@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jawaria Asghar — Self-Taught Developer | Jaxoris</title>
+<meta name="description" content="Some people write code. I build possibilities. Jawaria Asghar — self-taught developer working in Python, backend and web development, building toward AI deployment." />
+<meta name="author" content="Jawaria Asghar" />
+<meta name="theme-color" content="#050505" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Jawaria Asghar — Self-Taught Developer" />
+<meta property="og:description" content="Some people write code. I build possibilities." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='%2365B8FF'/%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%238CD6FF' stroke-opacity='.4'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<!-- ══════════════════ LOADING SCREEN ══════════════════ -->
+<div class="loader" id="loader" role="status" aria-live="polite">
+  <p class="loader__line">Every expert was once a beginner.</p>
+</div>
+
+<!-- ══════════════════ CUSTOM CURSOR ══════════════════ -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- ══════════════════ LIVING BACKGROUND ══════════════════ -->
+<div class="bg" aria-hidden="true">
+  <div class="bg__blob bg__blob--1"></div>
+  <div class="bg__blob bg__blob--2"></div>
+  <div class="bg__blob bg__blob--3"></div>
+  <div class="bg__blob bg__blob--4"></div>
+  <div class="bg__sheen"></div>
+  <canvas class="bg__particles" id="particles"></canvas>
+  <div class="bg__grain"></div>
+  <div class="bg__vignette"></div>
+</div>
+
+<a class="skip" href="#about">Skip to content</a>
+
+<!-- ══════════════════ NAVIGATION ══════════════════ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="brand" data-cursor="link">
+      <span class="brand__mark"></span>
+      <span class="brand__name">Jaxoris</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home"     class="nav__link" data-cursor="link">Home</a>
+      <a href="#projects" class="nav__link" data-cursor="link">Projects</a>
+      <a href="#journey"  class="nav__link" data-cursor="link">Journey</a>
+      <a href="#skills"   class="nav__link" data-cursor="link">Skills</a>
+      <a href="#contact"  class="nav__link" data-cursor="link">Contact</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="hero" id="home">
+
+    <!-- the single sentence, before anything else -->
+    <p class="preface reveal">
+      The future isn&rsquo;t built by those who wait for opportunity.<br />
+      It&rsquo;s built by those who create it.
+    </p>
+
+    <div class="glass hero__window reveal">
+      <div class="hero__glare"></div>
+
+      <p class="hero__eyebrow"><span class="dot"></span>Jaxoris &mdash; building quietly, building well</p>
+
+      <h1 class="hero__title">
+        <span class="line">Some people write code.</span>
+        <span class="line line--accent">I build possibilities.</span>
+      </h1>
+
+      <div class="hero__id">
+        <p class="hero__name">Jawaria Asghar</p>
+        <p class="hero__role">Self-Taught Developer</p>
+        <p class="hero__goal">Building toward AI deployment.</p>
+        <p class="hero__stack">Python &nbsp;•&nbsp; Backend &nbsp;•&nbsp; Web Development &nbsp;•&nbsp; Learning AI</p>
+      </div>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary" data-cursor="link">Explore My Work</a>
+        <a href="#contact"  class="btn" data-cursor="link">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════ ABOUT ══════════════════ -->
+  <section class="section" id="about">
+    <div class="wrap wrap--narrow">
+      <p class="eyebrow reveal">01 &mdash; About</p>
+      <h2 class="h2 reveal">More Than Code</h2>
+
+      <div class="prose">
+        <p class="prose__lead reveal">I never believed that where a person starts should decide where they finish.</p>
+
+        <p class="reveal">I wasn&rsquo;t supposed to become a software engineer.</p>
+
+        <p class="reveal">My journey didn&rsquo;t begin in a computer science classroom or with years of coding experience. It began with curiosity&mdash;the kind that refuses to disappear, even when the path ahead seems impossible.</p>
+
+        <p class="reveal">Every challenge became a lesson. Every unfamiliar concept became another reason to keep learning. While others followed a traditional route, I spent countless hours teaching myself, building projects, breaking them apart, and building them again. I learned that talent isn&rsquo;t about knowing everything; it&rsquo;s about refusing to stop when you don&rsquo;t.</p>
+
+        <p class="reveal">Today, I build software with the same mindset that started my journey: every line of code should solve a real problem, every product should make someone&rsquo;s life easier, and every project should leave the world a little better than it found it.</p>
+
+        <p class="reveal">I don&rsquo;t see programming as writing code. I see it as creating possibilities. A website can help a small business grow. An AI system can save someone hours of work. The right technology can change the course of a person&rsquo;s future.</p>
+
+        <p class="reveal">That&rsquo;s the kind of work I want to dedicate my life to.</p>
+
+        <p class="reveal">I&rsquo;m still learning. I hope I always will be. Because every new skill is another opportunity to build something meaningful&mdash;and somewhere, someone is waiting for that solution without even knowing it yet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ JOURNEY / TIMELINE ══════════════════ -->
+  <section class="section" id="journey">
+    <div class="wrap">
+      <p class="eyebrow reveal">02 &mdash; Journey</p>
+      <h2 class="h2 reveal">One Step At A Time</h2>
+      <p class="section__note reveal">Nothing here happened quickly. That&rsquo;s the point.</p>
+
+      <div class="timeline" id="timeline">
+        <div class="timeline__rail" aria-hidden="true">
+          <span class="timeline__progress" id="timelineProgress"></span>
+        </div>
+
+        <ol class="timeline__list">
+          <li class="tl reveal">
+            <span class="tl__node"><span class="tl__icon">📖</span></span>
+            <div class="tl__body glass">
+              <h3 class="tl__title">Started learning Python</h3>
+              <p class="tl__text">The first line of code. Nothing worked, and everything felt possible anyway.</p>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__node"><span class="tl__icon">🗄️</span></span>
+            <div class="tl__body glass">
+              <h3 class="tl__title">SQLite</h3>
+              <p class="tl__text">Learning that data has structure &mdash; and that structure is a kind of thinking.</p>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__node"><span class="tl__icon">🍃</span></span>
+            <div class="tl__body glass">
+              <h3 class="tl__title">MongoDB</h3>
+              <p class="tl__text">Documents, collections, flexibility. A different way to model the real world.</p>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__node"><span class="tl__icon">🌐</span></span>
+            <div class="tl__body glass">
+              <h3 class="tl__title">Web Development</h3>
+              <p class="tl__text">HTML, CSS, JavaScript, Flask. The moment code became something people could actually use.</p>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__node"><span class="tl__icon">☁️</span></span>
+            <div class="tl__body glass">
+              <h3 class="tl__title">Deployment</h3>
+              <p class="tl__text">Shipping it. Because software that never leaves your laptop helps no one.</p>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__node"><span class="tl__icon">🤖</span></span>
+            <div class="tl__body glass">
+              <h3 class="tl__title">Artificial Intelligence</h3>
+              <p class="tl__text">Where I am now &mdash; learning how models are trained, deployed, and actually used by people.</p>
+            </div>
+          </li>
+          <li class="tl tl--future reveal">
+            <span class="tl__node"><span class="tl__icon">🚀</span></span>
+            <div class="tl__body glass">
+              <h3 class="tl__title">Future&hellip;</h3>
+              <p class="tl__text">Still being written. That&rsquo;s the best part.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ SKILLS ══════════════════ -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <p class="eyebrow reveal">03 &mdash; Skills</p>
+      <h2 class="h2 reveal">The Tools I Think In</h2>
+      <p class="section__note reveal">Not a scoreboard. A toolkit.</p>
+
+      <div class="skills">
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">🐍</span><h3 class="skill__name">Python</h3><p class="skill__meta">Core language</p></article>
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">🧪</span><h3 class="skill__name">Flask</h3><p class="skill__meta">Backend &amp; APIs</p></article>
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">🗄️</span><h3 class="skill__name">SQLite</h3><p class="skill__meta">Relational data</p></article>
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">🍃</span><h3 class="skill__name">MongoDB</h3><p class="skill__meta">Document data</p></article>
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">🌿</span><h3 class="skill__name">Git</h3><p class="skill__meta">Version control</p></article>
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">🐙</span><h3 class="skill__name">GitHub</h3><p class="skill__meta">Collaboration</p></article>
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">📄</span><h3 class="skill__name">HTML</h3><p class="skill__meta">Structure</p></article>
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">🎨</span><h3 class="skill__name">CSS</h3><p class="skill__meta">Interface design</p></article>
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">⚡</span><h3 class="skill__name">JavaScript</h3><p class="skill__meta">Interaction</p></article>
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">🐼</span><h3 class="skill__name">Pandas</h3><p class="skill__meta">Data analysis</p></article>
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">🔗</span><h3 class="skill__name">REST APIs</h3><p class="skill__meta">Integration</p></article>
+        <article class="skill glass reveal" data-cursor="card"><span class="skill__glyph">☁️</span><h3 class="skill__name">Deployment</h3><p class="skill__meta">Shipping to production</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ PROJECTS ══════════════════ -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <p class="eyebrow reveal">04 &mdash; Work</p>
+      <h2 class="h2 reveal">Featured Projects</h2>
+      <p class="section__note reveal">Each one started as a problem worth solving.</p>
+
+      <div class="projects">
+
+        <article class="project glass reveal" data-cursor="card">
+          <div class="project__visual project__visual--a" aria-hidden="true"><span class="project__glyph">🏔️</span></div>
+          <div class="project__body">
+            <h3 class="project__title">Highland Routes &mdash; Tour Site</h3>
+            <p class="project__desc">A tour website for Skardu, Gilgit-Baltistan &mdash; planning practical trips to Deosai National Park and Upper Kachura Lake, with an attractions guide, photo gallery and a booking enquiry flow. Built multilingual from the start.</p>
+            <ul class="stack">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Multi-language</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" class="link" data-cursor="link">Live Demo <span class="link__arrow">↗</span></a>
+              <a href="#" class="link" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project glass reveal" data-cursor="card">
+          <div class="project__visual project__visual--e" aria-hidden="true"><span class="project__glyph">🛎️</span></div>
+          <div class="project__body">
+            <h3 class="project__title">Hotel Website</h3>
+            <p class="project__desc">A complete multi-page site for a guesthouse: rooms, facilities, gallery and a working booking enquiry flow. Built to be edited by the owner directly &mdash; no framework, no admin panel to learn.</p>
+            <ul class="stack">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" class="link" data-cursor="link">Live Demo <span class="link__arrow">↗</span></a>
+              <a href="#" class="link" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project glass reveal" data-cursor="card">
+          <div class="project__visual project__visual--b" aria-hidden="true"><span class="project__glyph">💸</span></div>
+          <div class="project__body">
+            <h3 class="project__title">Expense Tracker</h3>
+            <p class="project__desc">A personal finance tool that turns scattered spending into a clear picture. Add, categorise and review expenses, with monthly summaries generated straight from the database.</p>
+            <ul class="stack">
+              <li>Python</li><li>Flask</li><li>SQLite</li><li>Pandas</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" class="link" data-cursor="link">Live Demo <span class="link__arrow">↗</span></a>
+              <a href="#" class="link" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project glass reveal" data-cursor="card">
+          <div class="project__visual project__visual--c" aria-hidden="true"><span class="project__glyph">🎓</span></div>
+          <div class="project__body">
+            <h3 class="project__title">Student Database System</h3>
+            <p class="project__desc">A record management system with full create, read, update and delete operations, search, and validation &mdash; replacing a spreadsheet that nobody could safely share.</p>
+            <ul class="stack">
+              <li>Python</li><li>SQLite</li><li>CRUD</li><li>Data validation</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" class="link" data-cursor="link">Live Demo <span class="link__arrow">↗</span></a>
+              <a href="#" class="link" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project glass reveal" data-cursor="card">
+          <div class="project__visual project__visual--d" aria-hidden="true"><span class="project__glyph">🌌</span></div>
+          <div class="project__body">
+            <h3 class="project__title">Midnight Genesis &mdash; Portfolio</h3>
+            <p class="project__desc">This site. A hand-built interface with an animated liquid-glass background, a scroll-driven timeline and a custom cursor &mdash; no frameworks, no templates, no page builder.</p>
+            <ul class="stack">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas</li>
+            </ul>
+            <div class="project__links">
+              <a href="#home" class="link" data-cursor="link">You&rsquo;re looking at it <span class="link__arrow">↗</span></a>
+              <a href="#" class="link" data-cursor="link">GitHub <span class="link__arrow">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ PHILOSOPHY ══════════════════ -->
+  <section class="section" id="philosophy">
+    <div class="wrap wrap--narrow">
+      <p class="eyebrow reveal">05 &mdash; Philosophy</p>
+      <h2 class="h2 reveal">Why I Build</h2>
+
+      <div class="philosophy">
+        <article class="phil glass reveal">
+          <h3 class="phil__title">Complexity isn&rsquo;t value</h3>
+          <p class="phil__text">Technology isn&rsquo;t valuable because it&rsquo;s complex. It&rsquo;s valuable because it improves someone&rsquo;s life. The hardest part of engineering is choosing what to leave out.</p>
+        </article>
+        <article class="phil glass reveal">
+          <h3 class="phil__title">Software should solve problems</h3>
+          <p class="phil__text">Not impress people. If a product doesn&rsquo;t remove friction from someone&rsquo;s day, it doesn&rsquo;t matter how elegant the architecture is.</p>
+        </article>
+        <article class="phil glass reveal">
+          <h3 class="phil__title">AI should empower, not replace</h3>
+          <p class="phil__text">The goal is to give people their hours back so they can spend them on the work only a human can do. Automation should widen what someone is capable of.</p>
+        </article>
+        <article class="phil glass reveal">
+          <h3 class="phil__title">Learning never ends</h3>
+          <p class="phil__text">Every day I write code knowing there is still more to discover. That is exactly why I love this field.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ QUOTE ══════════════════ -->
+  <section class="quote-section">
+    <div class="wrap">
+      <blockquote class="quote reveal">
+        &ldquo;The best way to predict the future is to build it.&rdquo;
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CONTACT ══════════════════ -->
+  <section class="section section--contact" id="contact">
+    <div class="wrap wrap--narrow">
+      <p class="eyebrow reveal">06 &mdash; Contact</p>
+      <h2 class="h2 h2--big reveal">Let&rsquo;s Build Something Meaningful</h2>
+      <p class="contact__note reveal">Have a problem worth solving, a role to fill, or an idea you can&rsquo;t stop thinking about? I&rsquo;d like to hear about it.</p>
+
+      <div class="contact">
+        <a class="contact__card glass reveal" href="mailto:jawaraasghar@gmail.com" data-cursor="card">
+          <span class="contact__glyph">@</span>
+          <span class="contact__label">Email</span>
+          <span class="contact__value">jawaraasghar@gmail.com</span>
+        </a>
+        <a class="contact__card glass reveal" href="https://www.linkedin.com/" target="_blank" rel="noopener" data-cursor="card">
+          <span class="contact__glyph">in</span>
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__value">Let&rsquo;s connect</span>
+        </a>
+        <a class="contact__card glass reveal" href="https://github.com/" target="_blank" rel="noopener" data-cursor="card">
+          <span class="contact__glyph">⌘</span>
+          <span class="contact__label">GitHub</span>
+          <span class="contact__value">See the code</span>
+        </a>
+        <a class="contact__card glass reveal" href="assets/resume.pdf" target="_blank" rel="noopener" data-cursor="card">
+          <span class="contact__glyph">↓</span>
+          <span class="contact__label">Resume</span>
+          <span class="contact__value">Download PDF</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <a href="#home" class="brand brand--footer" data-cursor="link">
+      <span class="brand__mark"></span>
+      <span class="brand__name">Jaxoris</span>
+    </a>
+    <p class="footer__line">
+      Designed with curiosity.<br />
+      Built with purpose.
+    </p>
+    <p class="footer__meta">Jawaria Asghar &mdash; Self-Taught Developer</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
